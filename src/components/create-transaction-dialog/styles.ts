@@ -1,5 +1,5 @@
 import { InputNumberFormat } from '@react-input/number-format';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import { theme } from '../../styles/theme';
 
@@ -53,7 +53,7 @@ export const InputGroup = styled.div`
   }
 `;
 
-export const CurrencyIpunt = styled(InputNumberFormat)`
+export const CurrencyInput = styled(InputNumberFormat)`
   height: 2.25rem;
   background-color: ${theme.colors.black};
   border: 0;
@@ -74,7 +74,7 @@ export const CurrencyIpunt = styled(InputNumberFormat)`
   }
 `;
 
-export const RadioFrom = styled.div`
+export const RadioForm = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -95,4 +95,11 @@ export const RadioGroup = styled.div`
     color: ${theme.colors.white};
     font-size: 0.875rem;
   }
+`;
+
+export const ErrorMessage = styled.span`
+  margin-top: 0.125rem;
+  font-size: 0.625rem;
+  line-height: 80%;
+  color: ${theme.colors.error};
 `;

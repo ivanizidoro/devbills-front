@@ -1,15 +1,15 @@
 import { ReactNode } from 'react';
 
-import { Content, Overlay, Portal, Root, Trigger } from './styles';
+import { Overlay, Root, Portal, Content, Trigger } from './styles';
 
-type DialofPorps = {
+type DialogProps = {
   children: ReactNode;
   trigger: JSX.Element;
   open?: boolean;
   onOpenChange?: (open: boolean) => void;
 };
 
-export function Dialog({ children, trigger, open, onOpenChange }: DialofPorps) {
+export function Dialog({ children, trigger, open, onOpenChange }: DialogProps) {
   return (
     <Root open={open} onOpenChange={onOpenChange}>
       <Trigger>{trigger}</Trigger>
